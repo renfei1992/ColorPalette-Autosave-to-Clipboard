@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>constructor-selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .btn{
+            text-align:left;
+            border:0;
+            margin:0 auto;
+        }
+        div{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. Define some markup -->
+    <div id="fluids" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">FLUIDS</p>
+        <button class="btn" data-clipboard-text="#2196F3" style="width:100%;background-color:#2196F3;height:60px">#2196F3</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#BBDEFB" style="width:100%;background-color:#BBDEFB;height:30px">#BBDEFB</button>
+        <button class="btn" data-clipboard-text="#64B5F6" style="width:100%;background-color:#64B5F6;height:30px">#64B5F6</button>
+        <button class="btn" data-clipboard-text="#2196F3" style="width:100%;background-color:#2196F3;height:30px">#2196F3</button>
+        <button class="btn" data-clipboard-text="#1976D2" style="width:100%;background-color:#1976D2;height:30px;color:white;">#1976D2</button>
+        <button class="btn" data-clipboard-text="#0D47A1" style="width:100%;background-color:#0D47A1;height:30px;color:white;">#0D47A1</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="structures" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">STRUCTURES</p>
+        <button class="btn" data-clipboard-text="#9C27B0" style="width:100%;background-color:#9C27B0;height:60px;color:white;">#9C27B0</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#E1BEE7" style="width:100%;background-color:#E1BEE7;height:30px">#E1BEE7</button>
+        <button class="btn" data-clipboard-text="#BA68C8" style="width:100%;background-color:#BA68C8;height:30px">#BA68C8</button>
+        <button class="btn" data-clipboard-text="#9C27B0" style="width:100%;background-color:#9C27B0;height:30px;color:white;">#9C27B0</button>
+        <button class="btn" data-clipboard-text="#7B1FA2" style="width:100%;background-color:#7B1FA2;height:30px;color:white;">#7B1FA2</button>
+        <button class="btn" data-clipboard-text="#4A148C" style="width:100%;background-color:#4A148C;height:30px;color:white;">#4A148C</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="electronics" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">ELECTRONICS</p>
+        <button class="btn" data-clipboard-text="#8BC34A" style="width:100%;background-color:#8BC34A;height:60px">#8BC34A</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#DCEDC8" style="width:100%;background-color:#DCEDC8;height:30px">#DCEDC8</button>
+        <button class="btn" data-clipboard-text="#AED581" style="width:100%;background-color:#AED581;height:30px">#AED581</button>
+        <button class="btn" data-clipboard-text="#8BC34A" style="width:100%;background-color:#8BC34A;height:30px">#8BC34A</button>
+        <button class="btn" data-clipboard-text="#689F38" style="width:100%;background-color:#689F38;height:30px;color:white;">#689F38</button>
+        <button class="btn" data-clipboard-text="#33691E" style="width:100%;background-color:#33691E;height:30px;color:white;">#33691E</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="semiconductors" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">SEMICONDUCTORS</p>
+        <button class="btn" data-clipboard-text="#AFB42B" style="width:100%;background-color:#AFB42B;height:60px">#AFB42B</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#F0F4C3" style="width:100%;background-color:#F0F4C3;height:30px">#F0F4C3</button>
+        <button class="btn" data-clipboard-text="#DCE775" style="width:100%;background-color:#DCE775;height:30px">#DCE775</button>
+        <button class="btn" data-clipboard-text="#CDDC39" style="width:100%;background-color:#CDDC39;height:30px">#CDDC39</button>
+        <button class="btn" data-clipboard-text="#AFB42B" style="width:100%;background-color:#AFB42B;height:30px">#AFB42B</button>
+        <button class="btn" data-clipboard-text="#827717" style="width:100%;background-color:#827717;height:30px;color:white;">#827717</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="systems" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">SYSTEMS</p>
+        <button class="btn" data-clipboard-text="#00BCD4" style="width:100%;background-color:#00BCD4;height:60px">#00BCD4</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#B2EBF2" style="width:100%;background-color:#B2EBF2;height:30px">#B2EBF2</button>
+        <button class="btn" data-clipboard-text="#4DD0E1" style="width:100%;background-color:#4DD0E1;height:30px">#4DD0E1</button>
+        <button class="btn" data-clipboard-text="#00BCD4" style="width:100%;background-color:#00BCD4;height:30px">#00BCD4</button>
+        <button class="btn" data-clipboard-text="#0097A7" style="width:100%;background-color:#0097A7;height:30px;color:white;">#0097A7</button>
+        <button class="btn" data-clipboard-text="#006064" style="width:100%;background-color:#006064;height:30px;color:white;">#006064</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="embedded_software" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">EMBEDDED SOFTWARE</p>
+        <button class="btn" data-clipboard-text="#F57C00" style="width:100%;background-color:#F57C00;height:60px">#F57C00</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#FFE0B2" style="width:100%;background-color:#FFE0B2;height:30px">#FFE0B2</button>
+        <button class="btn" data-clipboard-text="#FFB74D" style="width:100%;background-color:#FFB74D;height:30px">#FFB74D</button>
+        <button class="btn" data-clipboard-text="#FF9800" style="width:100%;background-color:#FF9800;height:30px">#FF9800</button>
+        <button class="btn" data-clipboard-text="#F57C00" style="width:100%;background-color:#F57C00;height:30px">#F57C00</button>
+        <button class="btn" data-clipboard-text="#E65100" style="width:100%;background-color:#E65100;height:30px;color:white;">#E65100</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="multiphysics" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">MULTIPHYSICS</p>
+        <button class="btn" data-clipboard-text="#009688" style="width:100%;background-color:#009688;height:60px;color:white">#009688</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#B2DFDB" style="width:100%;background-color:#B2DFDB;height:30px">#B2DFDB</button>
+        <button class="btn" data-clipboard-text="#4DB6AC" style="width:100%;background-color:#4DB6AC;height:30px">#4DB6AC</button>
+        <button class="btn" data-clipboard-text="#009688" style="width:100%;background-color:#009688;height:30px;color:white">#009688</button>
+        <button class="btn" data-clipboard-text="#007968" style="width:100%;background-color:#007968;height:30px;color:white">#007968</button>
+        <button class="btn" data-clipboard-text="#004D40" style="width:100%;background-color:#004D40;height:30px;color:white;">#004D40</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+    </div>
+
+    <div id="platform" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">PLATFORM</p>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:60px;color:white">#616161</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#F5F5F5" style="width:100%;background-color:#F5F5F5;height:30px">#F5F5F5</button>
+        <button class="btn" data-clipboard-text="#E0E0E0" style="width:100%;background-color:#E0E0E0;height:30px">#E0E0E0</button>
+        <button class="btn" data-clipboard-text="#9E9E9E" style="width:100%;background-color:#9E9E9E;height:30px;color:white">#9E9E9E</button>
+        <button class="btn" data-clipboard-text="#727272" style="width:100%;background-color:#727272;height:30px;color:white">#727272</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+        <button class="btn" data-clipboard-text="#FFDD00" style="width:100%;background-color:#FFDD00;height:30px">#FFDD00</button>
+        <button class="btn" data-clipboard-text="#000000" style="width:100%;background-color:#000000;height:30px;color:white;">#000000</button>
+    </div>
+
+    <div id="installation" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">INSTALLATION & LM</p>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:60px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#FFFFFF" style="width:100%;background-color:#FFFFFF;height:30px">#FFFFFF</button>
+        <button class="btn" data-clipboard-text="#F5F5F5" style="width:100%;background-color:#F5F5F5;height:30px">#F5F5F5</button>
+        <button class="btn" data-clipboard-text="#E0E0E0" style="width:100%;background-color:#E0E0E0;height:30px">#E0E0E0</button>
+        <button class="btn" data-clipboard-text="#9E9E9E" style="width:100%;background-color:#9E9E9E;height:30px;color:white">#9E9E9E</button>
+        <button class="btn" data-clipboard-text="#727272" style="width:100%;background-color:#727272;height:30px;color:white">#727272</button>
+        <button class="btn" data-clipboard-text="#616161" style="width:100%;background-color:#616161;height:30px;color:white;">#616161</button>
+        <button class="btn" data-clipboard-text="#212121" style="width:100%;background-color:#212121;height:30px;color:white;">#212121</button>
+        <button class="btn" data-clipboard-text="#FFDD00" style="width:100%;background-color:#FFDD00;height:30px">#FFDD00</button>
+        <button class="btn" data-clipboard-text="#000000" style="width:100%;background-color:#000000;height:30px;color:white;">#000000</button>
+    </div>
+
+    <div id="messages" style="width:18%;display:inline-block;">
+        <p style="font-size:15px">MESSAGES</p>
+        <button class="btn" data-clipboard-text="#E53935" style="width:100%;background-color:#E53935;height:30px">#E53935</button>
+        <button class="btn" data-clipboard-text="#FDD835" style="width:100%;background-color:#FDD835;height:30px">#FDD835</button>
+        <button class="btn" data-clipboard-text="#43A047" style="width:100%;background-color:#43A047;height:30px;color:white">#43A047</button>
+        <button class="btn" data-clipboard-text="#1E88E5" style="width:100%;background-color:#1E88E5;height:30px;color:white">#1E88E5</button>
+    </div>
+    <!-- 2. Include library -->
+    <script src="clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard by passing a string selector -->
+    <script>
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+
+</body>
+</html>
